@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign up here</h1>
+        <form class="" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+<!--        {% if user_records %}-->
+<!--        <ol>-->
+<!--            {% for user in user_records %}-->
+<!--            <li>User Info</li>-->
+<!--                <ul>-->
+<!--                    <li>First Name: {{user.firstname}}</li>-->
+<!--                    <li>Last Name: {{user.lastname}}</li>-->
+<!--                    <li>Email: {{user.email}}</li>-->
+<!--                </ul>-->
+
+<!--            {% endfor %}-->
+<!--        </ol>-->
+<!--        {% else %}-->
+<!--        <p>NO USER RECORDS FOUND</p>-->
+<!--        {% endif %}-->
+    </div>
+
+
+
+</body>
+</html>
+
+
+
